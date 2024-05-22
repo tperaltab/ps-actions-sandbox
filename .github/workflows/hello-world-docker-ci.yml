@@ -1,12 +1,12 @@
 name: CI Docker Demo
 on:
-  push:
+  push: 
     branches: [ main ]
     paths: [ hello-world-docker-action/** ]
   workflow_dispatch:
 
 jobs:
-  check-docker-action:
+  test-my-docker-action:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
