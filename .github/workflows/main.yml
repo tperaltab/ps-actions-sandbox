@@ -2,7 +2,7 @@ name: Super-Linter
 on: 
   workflow_dispatch:
 jobs:
-  CheckVulnerabilitiesOnWorkFlows:
+  Build:
     runs-on: ubuntu-latest
     steps:
         - name: Checkout
@@ -10,7 +10,5 @@ jobs:
         
         - name: Super-Linter
         - uses: super-linter/super-linter@v5.7.2
-        - with:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             
         
