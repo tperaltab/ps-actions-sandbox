@@ -1,4 +1,4 @@
-name: Check vulnerabilities on yaml workflows
+name: Super-Linter
 on: 
   workflow_dispatch:
 jobs:
