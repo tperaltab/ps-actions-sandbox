@@ -10,10 +10,10 @@ on:
   workflow_dispatch:
 jobs:
   Build:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "The job triggered is: ${{ github.job }}"
+          echo "The job triggered is: ${{ github.event_name }}"
           echo "The branch name is: ${{ github.ref }}"
       - uses: actions/checkout@v4
       - run: |
